@@ -7,10 +7,10 @@ package com.test.di.monad.approach2
   **/
 object Server {
 
-  val config = new Config(new Persistence {})
+  val config = new Config(new IntPersistence {}, new Marshaller {})
 
   def start(): Unit = {
-    val program = Route.routes("put", "1")
+    val program = Route.routes("get", "1")
 
     val result = program(config)
 
