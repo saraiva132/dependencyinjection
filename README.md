@@ -1,4 +1,4 @@
-# dependencyinjection
+# Dependency injection in Scala
 Let's explore various possible ways of using the Scala language to perform dependency injection 
 without the need for any framework or run-time magic (Looking at you Guice). Just safe compile-time dependency wiring.
 
@@ -9,6 +9,6 @@ without the need for any framework or run-time magic (Looking at you Guice). Jus
 * Constructor Parameter
 * Macwire (uses MACROS)
 * Abstract dependencies
-* Structural typing (as parameters)
+* Structural typing (as class constructor parameter)
 * Implicits
-* Reader Monad
+* Reader Monad 
