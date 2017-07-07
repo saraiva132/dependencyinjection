@@ -1,5 +1,9 @@
 package com.tnt.di.implicits
 
+/**
+  * Same as constructor parameters but use implicits to reduce boiler plate. I believe this might be a
+  * bit confusing sometimes. It is dangerous to over-use implicits
+  */
 object Server {
 
   import Structures._

@@ -1,8 +1,11 @@
-package com.tnt.di.monad
+package com.tnt.di.monad.approach1
 
 import cats.data.Reader
 
-
+/**
+  * READER MONAD DOES NOT DEAL WELL WITH NESTED DEPENDENCIES
+  * ASSUMING THE STRUCTURES ARE CLASSES, OF COURSE.
+  */
 object Env {
 
   private val persistence = new ActualPersistence
@@ -16,6 +19,7 @@ object Server {
 
   import Env._
 
+  //Nested inversion of control (get persistence, get service..)
   def run( program : Reader[Service, Reader[Persistence, MyHttpResponse]]) : MyHttpResponse = {
     getPersistence(getService(program))
   }

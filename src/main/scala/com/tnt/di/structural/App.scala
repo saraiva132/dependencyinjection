@@ -2,6 +2,9 @@ package com.tnt.di.structural
 
 import Structures._
 
+/**
+  * Structural typing brings an interesting DI example (yet not very practical) to the table
+  */
 object Backend {
    val persistence = new Persistence()
    val marshaller = new Marshaller()

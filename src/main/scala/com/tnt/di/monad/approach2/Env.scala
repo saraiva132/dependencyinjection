@@ -1,4 +1,4 @@
-package com.tnt.di.monad
+package com.tnt.di.monad.approach2
 
 import cats.data.Reader
 

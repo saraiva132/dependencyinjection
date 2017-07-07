@@ -2,6 +2,11 @@ package com.tnt.di.thincake
 
 import com.tnt.di.thincake.Structures._
 
+/**
+  * An extremely clean way of doing DI although, given many dependencies, it might get hairy.
+  *
+  * See below. Given an HTTPHandler and all those traits. What depends on what?
+  */
 object Server extends HTTPHandler
   with OrderRoute
   with QuoteRoute

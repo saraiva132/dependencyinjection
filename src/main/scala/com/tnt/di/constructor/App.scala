@@ -1,5 +1,10 @@
 package com.tnt.di.constructor
 
+
+/**
+  * The easiest and more direct way of doing DI. Constructor parameters!! Everyone understand this and it may
+  * be the easiest way to do DI and also does not have too many gotchas
+  */
 object Server {
 
   import Structures._

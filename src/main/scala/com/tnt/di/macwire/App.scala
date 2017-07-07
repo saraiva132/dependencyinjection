@@ -1,6 +1,11 @@
 package com.tnt.di.macwire
 import com.tnt.di.macwire.Structures._
 
+/**
+  * Instead of implicits macwire uses MACRO to reduce DI boilerplate. Very interesting and clean but some might
+  * say that it might be hard to actually understand what depends on what.
+  *
+  */
 object Server {
 
   import com.softwaremill.macwire._
