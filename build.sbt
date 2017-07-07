@@ -14,7 +14,7 @@ lazy val `dependencyinjection` =
     .enablePlugins(JavaAppPackaging)
     .settings(settings)
     .settings(
-      mainClass in (Compile,run) := Some("com.tnt.di.constructor.App"),
+      mainClass in (Compile,run) := Some("com.test.di.constructor.App"),
       topLevelDirectory := None,
       name in Universal := name.value
     )
